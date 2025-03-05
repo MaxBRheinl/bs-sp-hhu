@@ -15,9 +15,8 @@
 5. VM booten und einloggen (Username: student, Passwort: bs4student)
     
     <aside>
-    ⚠️
     
-    **Nicht die VM updaten! Diese Version ist vorausgesetzt für das Modul!**
+    **⚠️Nicht die VM updaten! Diese Version ist vorausgesetzt für das Modul!⚠️**
     
     </aside>
     
