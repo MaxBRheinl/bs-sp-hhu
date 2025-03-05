@@ -1,6 +1,3 @@
-# bs-sp-hhu
-In diesem Repository sammle ich alle Aufgaben, Übungen und Projekte, die ich im Rahmen des Moduls 'Betriebssysteme und Systemprogrammierung' an der Heinrich-Heine-Universität Düsseldorf bearbeite. Es enthält Lösungen, Code und Notizen zu Themen wie Betriebssysteme, Systemprogrammierung und verwandte Konzepte.
-
 # Installation und Einrichtung
 
 ## Windows:
