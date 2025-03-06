@@ -14,5 +14,5 @@ calc.o: calc.c
 clean:
 	rm *.o $(OUTPUT)
 	
-run:
+run: $(OUTPUT)
 	./$(OUTPUT)
