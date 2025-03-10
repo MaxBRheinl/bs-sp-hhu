@@ -21,15 +21,16 @@ Die meisten Betriebssysteme ermöglichen nebenläufige Aktivitäten auf Basis vo
     > Antwort:
     > 
     > 
+    > (Race-Conditions)
+    > 
+    > Es kann zu Inkonsitenzen kommen wenn zwei Threads zeitgleich Werte an Adressen schreiben, die sie beide nutzen.
+    > 
     > (Deadlocks)
     > 
-    > Zwei Threads könnten sich gegenseitig blockieren. Indem zum Beispiel ein Thread eine Ressource belegt und auf die Freigabe einer anderen wartet, die wiederum durch einen Thread blockiert wird, der auf die Freigabe der Ressource, die der erste Thread blockiert, wartet. So entsteht ein Kreis von Abhänigkeiten.
-    > 
-    > (Inkonsistenz)
-    > 
-    > Außerdem könnte es zu Inkonsitenzen kommen wenn zwei Threads zeitgleich Werte an Adressen schreiben, die sie beide nutzen.
+    > Außerdem könnten zwei Threads sich gegenseitig blockieren. Indem zum Beispiel ein Thread eine Ressource belegt und auf die Freigabe einer anderen wartet, die wiederum durch einen Thread blockiert wird, der auf die Freigabe der Ressource, die der erste Thread blockiert, wartet. So entsteht ein Kreis von Abhänigkeiten.
     > 
     > (Konvoi-Effekt)
+    > 
     > Zusätzlich kann der Konvoi-Effekt beim FCFS-Scheduling mit kooperativem Multitasking auftreten. Wenn ein Thread die CPU für eine lange Zeit blockiert, müssen andere Threads warten, bis dieser fertig ist, selbst wenn sie nur kurze Berechnungen durchführen müssten.
     > 
 
@@ -40,7 +41,7 @@ Die meisten Betriebssysteme ermöglichen nebenläufige Aktivitäten auf Basis vo
     > 
     > (Ressourcensparsamkeit)
     > 
-    > Thread bieten sich immer dort an, wenn Ressourcensparsam berechnet werden soll.
+    > Threads bieten sich immer dort an, wenn Ressourcensparsam berechnet werden soll.
     > 
     >  
     > 
@@ -51,4 +52,5 @@ Die meisten Betriebssysteme ermöglichen nebenläufige Aktivitäten auf Basis vo
     > (gemeinsamer Adressraum)
     > 
     > Sobald Programmteile auf gleiche Speicherdaten zugreifen können sollen oder kein Schutz des Adressraums notwendig ist, bieten sich Threads an.
-    >
+    > 
+    > **Tipp**: Es deutlich kostengünstiger zwischen Threads zu wechsel als zwischen Prozessen zu wechseln, auf Grund des Adressraumwechsels.
