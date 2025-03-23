@@ -16,6 +16,7 @@ void* find_max(void *param){
 	int max, curr = data->arr[data->start];
 	
 	for(int i = data->start; i < data->end; i++){
+		curr = data->arr[i];
 		if(max < curr){
 			max = curr;
 			}
