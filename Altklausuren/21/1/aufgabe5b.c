@@ -48,7 +48,7 @@ int main (int argc, const char* argv[]) {
 	if(pthread_create(&threads[0], NULL, producer, sem)){
 		printf("ERROR: Producer-Thread konnte nicht gestartet werden.\n");
 		exit(EXIT_FAILURE);
-		}
+		}c
 	if(pthread_create(&threads[1], NULL, consumer, sem)){
 		printf("ERROR: Consumer-Thread konnte nicht gestartet werden.\n");
 		exit(EXIT_FAILURE);
