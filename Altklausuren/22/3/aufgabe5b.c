@@ -50,7 +50,7 @@ int main(){
 	srand(time(NULL));
 	int arr[ARRAY_LEN];
 	for(int i = 0; i < ARRAY_LEN; i++){
-		arr[ARRAY_LEN] = rand() % 255;
+		arr[ARRAY_LEN] = rand() % 256;
 		}
 	
 	param_t *params = calloc(NUM_WORKER, sizeof(param_t));
